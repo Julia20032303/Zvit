@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Опис бізнес-логіки</title>
+	<style >
+body{
+	background-color: whitesmoke;
+
+	font-family:Bahnschrift light;
+
+}
+ul {
+  display: grid;
+  place-items: center;
+  counter-reset: li; 
+  list-style: none; 
+  padding: 0;
+}
+
+ul li {
+  padding: 8px 16px;
+  border: none;
+  width: 600px;
+  text-align: left;
+}
+
+ul a {
+  position: relative;
+  display: block;
+  padding: .4em .4em .4em .8em;
+  margin: .5em 0 .5em 2.5em;
+  background: #D3D4DA;
+  color: #444;
+  text-decoration: none;
+  transition: all .3s ease-out;
+}
+
+ul a:hover {background: #DCDDE1;}       
+ul a:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: -2.5em;
+  top: 50%;
+  margin-top: -1em;
+  background: #f9dd94;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  text-align: center;
+  font-weight: bold;
+}
+
+ul a:after {
+  position: absolute;
+  content: "";
+  border: .5em solid transparent;
+  left: -1em;
+  top: 50%;
+  margin-top: -.5em;
+  transition: all .3s ease-out;
+}
+
+ul a:hover:after {
+  left: -.5em;
+  border-left-color: #f9dd94;
+}
+footer{
+	background-color:#f9dd94 ;
+	height: 100px;
+	text-align: center;
+}
+p{
+	font-size: 20px;
+}
+</style>
+</head>
+<body>
+	<ul>
+		<caption><h2 style="text-align: center;font-size:20px ;background-color:#f9dd94 ; width: 580px; height: 60px; padding: 10px;">Основна бізнес-логіка веб-додатку для резервування автомобілів </h2></caption>
+		<li class=""><a href="#">Реєстрація користувачів із зберіганням персональних даних та інформації про водійське посвідчення.</a></li>
+		<li class=""><a href="#">Перегляд каталогу автомобілів з можливістю детального ознайомлення з характеристиками кожного автомобіля, таких як марка, модель, рік випуску, ціна, розмір двигуна, тип палива тощо.</a></li>
+		<li class=""><a href="#">Вибір автомобіля для прокату з допомогою календаря, який показує доступність автомобіля на потрібний час та дату.</a></li>
+		<li class=""><a href="#">Резервування автомобіля з використанням онлайн-форми з обов'язковими полями для вказівки дати, часу та тривалості прокату.</a></li>
+		<li class=""><a href="#">Можливість додаткового замовлення послуг, таких як навігація, автокрісла, додаткове страхування тощо.</a></li>
+		<li class=""><a href="#">Оплата прокату автомобіля з допомогою різних способів, таких як кредитна картка, електронний гаманець тощо.</a></li>
+		<li class=""><a href="#">Доставка автомобіля на зазначене місце та збір автомобіля після закінчення терміну прокату.</a></li>
+		<li class=""><a href="#">Моніторинг та оновлення інформації про стан автомобіля під час прокату, таких як пробіг, паливний бак, накладні та інші дані.</a></li>
+	</ul>
+	<ul>
+		<caption><h2 style="text-align: center;font-size:20px ;background-color:#f9dd94 ; width: 580px; height: 55px; padding: 10px;">Нефункціональні вимоги веб-додатку<br> для резервування автомобілів на прокат:</h2></caption>
+		<li class=""><a href="#"><b>Сумісність:</b> додаток повинен бути сумісним з різними пристроями та браузерами, такими як: Google Chrome, Safari, Mozila Firefox. </a></li>
+		<li class=""><a href="#"><b>Характеристики пристрою:</b> процесор повинен бути не нижче Intel Pentium 5, оперативна пам'ять має бути не менше 4 Гб, операційна система : Windows, Linux та macOS , HDD 200 Гб.</a></li>
+		<li class=""><a href="#"><b>Швидкість:</b> методи MCDA повинні виконуватись до 3 секунд. Час реакції натискання кнопки та завантаження сторінки має бути до 5 секунд.</a></li>
+		<li class=""><a href="#"><b>Помилки:</b> за всіма винятками повинні слідувати сторінки помилок. Наприклад: "Сторінка тимчасово недоступна".</a></li>
+		<li class=""><a href="#"><b>Локалізація:</b> додаток має бути локалізований такими мовами: UA, ENG.</a></li>
+		<li class=""><a href="#"><b>Легкість використання: </b> додаток повинен бути простим у використанні для клієнтів будь-якого рівня технічної грамотності</a></li>
+	</ul>
+	<ul>
+		<caption><h2 style="text-align: center;font-size:20px ;background-color:#f9dd94 ; width: 580px; height: 55px; padding: 10px;">Функціональні вимоги веб-додатку <br>для резервування автомобілів на прокат:</h2></caption>
+		<li class=""><a href="#"><b>Реєстрація користувачів:</b> Користувачі можуть створювати облікові записи в системі та зберігати свої особисті дані, такі як ім'я, адреса, номер телефону та інформація про кредитну картку.</a></li>
+		<li class=""><a href="#"><b>Пошук автомобілів:</b> Користувачі можуть шукати автомобілі, доступні для прокату, за різними параметрами, такими як модель, рік випуску, тип двигуна, місце знаходження тощо.</a></li>
+		<li class=""><a href="#"><b>Бронювання автомобіля:</b> Користувачі можуть бронювати автомобілі, які вони знайшли, вказавши дату та час отримання та повернення автомобіля, а також будь-які додаткові послуги, які вони можуть потребувати.</a></li>
+		<li class=""><a href="#"><b>Оплата:</b> Користувачі можуть оплачувати свої бронювання онлайн за допомогою кредитної картки.</a></li>
+		<li class=""><a href="#"><b>Зміна або скасування бронювання: </b>Користувачі можуть змінювати або скасовувати свої бронювання в системі з попереднім повідомленням.</a></li>
+		<li class=""><a href="#"><b>Розрахунок вартості:</b> Система повинна автоматично розраховувати вартість прокату автомобіля</a></li>
+</ul>
+<footer><p><br>Підготували :  <br>Подвойська Е. та  Бондаренко Ю.</p></footer>
+</body>
+</html>

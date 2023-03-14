@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Labwork3</title>
+		<style>
+		table {
+			width: 100%
+		}
+		td{
+			height: 60px;
+			text-align: center;
+			border-radius: 17px;
+			background-color: #f9dd94;
+		}
+		a {
+			text-decoration: none;
+			color: black;
+		}
+		.one{
+			width: 370px;
+			height: 30px ;
+			margin-top: 30px;
+			background-color:#5F9EA0;
+			border-radius: 10px;
+			text-align: center;
+			padding-top:10px ;
+		}
+		.two{
+			width: 170px;
+			height: 40px ;
+			margin-top: 10px;
+			background-color:#5F9EA0;
+			border-radius: 10px;
+			text-align: center;
+			/*padding-top:10px ;**/
+		}
+		.container{
+			text-align: center;
+			float:  left;
+		}
+		.main{
+			margin-left: 100px;
+            padding: 10px;
+			height: 600px;
+            width: 340px;
+            float: left;
+		}
+		.side{
+			margin-left:80px;
+            padding: 10px;
+			height: 600px;
+            width: 340px;
+            float: left;
+		}
+		@media all and (max-width: 1350px){
+			.img{
+			display:none;
+		}
+}
+		#header{
+			background-color:PaleVioletRed ;
+			width: 300px;
+			height: 50px;
+			margin-left: 20px;
+		}
+		.sidebar{
+			background-color:CadetBlue ;
+			width: 50px;
+			height: 400px;
+			margin-left: 20px;
+			float: left;
+		}
+		.body{
+			background-color: Orange;
+			width: 250px;
+			height: 350px;
+			float: left;
+		}
+		.smallheader{
+			background-color:OliveDrab ;
+			width: 250px;
+			height: 50px;
+			float: left;
+
+		}
+		#footer{
+			background-color: PaleVioletRed;
+			width: 300px;
+			height: 50px;
+			margin-left: 20px;
+			overflow: auto;
+		}
+		h2, h3{margin: 0; text-align: center;}
+		.box{
+			width: 340px;
+			height: 500px;
+			border: 1px solid black;
+		}
+
+	</style>
+</head>
+<body style="background-color: whitesmoke;">
+	<h3 style="text-align: center;">ЗВІТ З ЛАБОРАТОРНИХ РОБІТ<br>З ДИСЦИПЛІНИ WEB-ОРІЄНТОВАНІ ТЕХНОЛОГІЇ.<br>ОСНОВИ FRONTEND ТА BACKEND РОЗРОБОК</h3>
+	
+	<h2 style="text-align: center;">БРИГАДА № 17</h2>
+	<p style=" text-align: center;">Студенти : гр. ІО-04 Бондаренко Юлія , гр. ІО-04 Подвойська Еліза</p>
+<div class="img">
+	<img src="images/Yulia.jpg" width="130" height="170" style="position:absolute;right:300px;top:10px" >
+	<img src="images/Liza.jpg" alt="Liza" width="130" height="170" style="position:absolute;right:100px;top:10px" >
+</div>
+	<br><br>
+	<table>
+		<tr>
+			<td><a href="../lab1.html" >Лабораторна №1</a></td>
+			<td><a href="../lab2.html" >Лабораторна №2</a></td>
+			<td><a href="../lab3.html" >Лабораторна №3</a></td>
+			<td><a href="../lab4.html" >Лабораторна №4</a></td>
+			<td><a href="../lab5.html" >Лабораторна №5</a></td>
+			<td><a href="../lab6.html" >Лабораторна №6</a></td>
+			<td><a href="../lab7.html" >Лабораторна №7</a></td>
+			<td><a href="../lab8.html" >Лабораторна №8</a></td>
+			<td><a href="../lab9.html" >Лабораторна №9</a></td>
+		</tr>
+	</table>
+	<div class="container">
+		<div class="one"><a href="theme.html">Тема, Мета</a></div>
+		<div class="one"><a href="zav1.html">Завдання №1</a></div>
+		<div class="one"><a href="zav2.html">Завдання №2</a></div>
+		<div class="two"><a href="fictab.html">Фіксована таблична верстка</a></div>
+		<div class="two"><a href="flextab.html">Гумова таблична верстка</a></div>
+		<div class="two"><a href="ficdiv.html">Фіксована блокова верстка</a></div>
+		<div class="two"><a href="flexdiv.html">Гумова блокова <br>верстка</a></div>
+		<div class="one"><a href="flexbox.html">Завдання №3 FLEXBOX</a></div>
+		<div class="one"><a href="summary.html">Висновки та виконавці</a></div>
+	</div>
+	<div class="main">
+		<h3>Фіксована блокова верстка</h3>
+		<div class="box">
+			<div id="header"><h2>1</h2></div>
+			<div class="sidebar"><h2>2</h2></div>
+			<div class="smallheader"><h2>5</h2></div>
+			<div class="body"><h2>4</h2></div>
+			<div id="footer"><h2>3</h2></div>
+		</div>
+	</div>
+	<div class="side">
+		<p>Ширина при статичній верстці визначається з розрахунко того, що за статистичними даними більшість користувачів використовують монітори з роздільною здатністю 1024х768 пікселів</p>
+		<p>Недоліком при такому методі верстки - це неефективне використання вільної площі
+	</div>
+</body>
+</html>

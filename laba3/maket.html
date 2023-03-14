@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Макет</title>
+    <style>   
+      .menu{
+        background-color: gray;
+        border: 1px solid #888;
+        height: 10%;
+        width: 100%;
+        text-align: center;  
+      }
+      .nav{
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        padding: 4px 0;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: -3px;
+	  }
+	  .nav li {
+        margin-right: 30px;
+	  }
+      .head{
+        display:inline-flex;
+        justify-content: center;
+        background-color: #ddd;
+        border: 1px solid #888;
+        height: 10%;
+        width: 100%;
+        margin: auto; 
+       
+      }
+      .logo{
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        padding: 10px 60px;
+        float: left;
+        
+      }
+      .logo li{
+        margin-right: 50px; 
+        border: none; 
+      }
+      .button{
+        display:flex;
+        justify-content: center;
+        list-style-type: none;
+        padding: 0 -5px;
+        flex-wrap: wrap;
+        flex-direction: row;  
+      }
+      .button li{
+        margin-right: 50px; 
+        border: 1px solid #888;
+        padding: 10px 30px;
+      }
+      .photo{
+ 		    display: flex;
+        background-color: #ddd;
+        border: 1px solid #888;
+        height: 200px;
+        width: 100%;
+        text-align: center; 
+      }
+      .photo p{
+        text-align: center;
+        border: 1px solid #888;
+        background-color: white;
+        height: 100px;
+        width: 100px;
+        margin: auto; 
+      }
+      .mark{
+        background-color: #C0C0C0;
+        border: 1px solid #888;
+        height: 50px;
+        width: 100%;
+        text-align: center;
+      }
+      .mark h2{
+        margin-top: 10px
+      }
+      .cars{
+        margin-top: -3px;
+        background-color: #ddd;
+        border: 1px solid #888;
+        height: 60%;
+        width: 100%;
+        text-align: center;
+      }
+      .list{
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: -3px;
+      }
+      .list li{
+        background-color: white;
+        margin-right: 50px; 
+        border: 1px solid #888;
+        padding: 10px 30px;
+        height: 150px;
+        width: 50px;
+      }
+      .service{
+        margin-top: -3px;
+        background-color: #ddd;
+        border: 1px solid #888;
+        height: 250px;
+        width: 100%;
+        text-align: center;
+      }
+      .service p{
+        text-align: center;
+        border: 1px solid #888;
+        background-color: white;
+        height: 150px;
+        width: 250px;
+        margin: auto;  
+      }
+      .recom{
+        margin-top: -3px;
+        background-color: #C0C0C0;
+        border: 1px solid #888;
+        height: 60%;
+        width: 100%;
+        text-align: center;
+      }
+      .people{
+        display: flex;
+        justify-content: center;
+        list-style-type: none; 
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: -3px;
+      }
+      .people li{
+        background-color: white;
+        margin-right: 50px; 
+        border: 1px solid #888;
+        padding: 10px 30px;
+        height: 70px;
+        width: 70px;
+      }
+      .info{
+        background-color: #ddd;
+        border: 1px solid #888;
+        height: 200px;
+        width: 100%;
+        text-align: center;
+      }
+      .info h2{
+        margin-top: 80px;
+      }
+      footer{
+        background-color: gray;
+        border: 1px solid #888;
+        height: 30px;
+        width: 100%;
+        text-align: center;
+      }
+      footer h2{
+        margin-top: 0px;
+      }
+      @media only screen and (max-width:620px) {
+	  /* Для мобильных телефонов: */
+	  .button, #text, #car4 {
+		display: none;
+	  }
+      #form{
+      margin-right: 50px;
+      }
+      .people li{
+        max-width:20px;
+      }
+	}
+    </style>
+  </head>
+    <body>
+        <header>
+            <div class="menu">
+                <ul class="nav">
+                    <li>Головна</li>
+                    <li>Парк Авто</li>
+                    <li>Послуги</li>
+                    <li>Контакти</li>
+                </ul>
+            </div>
+            <BR>
+            
+            <div class="head">
+            	<ul class="logo">
+                    <li>SPEED WHEELS</li>
+                    <li>Logo</li>
+                </ul>
+          
+                <ul class="button">
+                    <li>Парк Авто</li>
+                    <li>Головна</li>
+                    <li>Контакти</li>
+                </ul>
+            </div>
+            
+        </header>
+        <BR>
+
+        <main>    
+            <div class="photo"> 
+            <p id="text"> Текст</p>
+            <p id="form">Форма</p>
+            </div>
+            <BR>
+            
+            <div class="mark">
+            <h2>Марки авто</h2>
+            </div>
+            <BR>
+            
+            <div class="cars">
+            <h2>Популярні авто</h2>
+                <ul class="list">
+                    <li>Авто</li>
+                    <li>Авто</li>
+                    <li id="car4">Авто</li>
+                    <li id="car4">Авто</li>
+                </ul>
+            </div>
+            <BR>
+            
+            <div class="service">
+            <h2>Наші послуги</h2>
+            <p>Список послуг</p>
+            </div>
+            <BR>
+            
+            <div class="recom">
+            <h2>Рекомендації</h2>
+            <ul class="people">
+                    <li>Фото</li>
+                    <li>Фото</li>
+                    <li>Фото</li>
+                </ul>
+            </div>
+            <BR>
+            
+            <div class="info">
+            <h2>Інформація про послуги</h2>
+            </div>
+            <BR> 
+        </main>   
+
+        <footer>
+            <div>
+            <h2>Footer</h2>
+            </div>
+        </footer>
+
+    </body>
+</html>

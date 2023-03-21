@@ -1,0 +1,34 @@
+.container2 {
+ max-width: 600px;
+ margin: 0 auto;
+ padding: 20px;
+}
+
+.alarm {
+ display: flex;
+ flex-direction: column;
+}
+
+.alarm div {
+ margin-bottom: 10px;
+}
+
+.alarm label {
+ margin-right: 10px;
+}
+
+.message {
+ margin-top: 20px;
+ text-align: center;
+}
+
+.message p {
+ font-size: 24px;
+ font-weight: bold;
+}
+button{
+  width: 200px;
+  background-color:rgb(135, 128, 65);
+  border: 5px solid rgb(135, 128, 65);
+  color: khaki
+}

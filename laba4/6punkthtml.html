@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<title>Labwork4</title>
+		<style>
+		table {
+			width: 100%
+		}
+		td{
+			height: 60px;
+			text-align: center;
+			border-radius: 17px;
+			background-color: #f9dd94;
+		}
+		a {
+			text-decoration: none;
+			color: black;
+		}
+		.one{
+			width: 370px;
+			height: 30px ;
+			margin-top: 30px;
+			background-color:#5F9EA0;
+			border-radius: 10px;
+			text-align: center;
+			padding-top:10px ;
+		}
+		.two{
+			width: 170px;
+			height: 40px ;
+			margin-top: 10px;
+			background-color:#5F9EA0;
+			border-radius: 10px;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}		.container{
+			text-align: center;
+			float:  left;
+		}
+		.main{
+			margin-left: 100px;
+            padding: 10px;
+			height: 600px;
+            width: 900px;
+            float: left;
+		}
+		.side{
+			margin-left:80px;
+            padding: 10px;
+			height: 600px;
+            width: 340px;
+            float: left;
+		}
+		@media all and (max-width: 1350px){
+			.img{
+			display:none;
+		}
+	}
+	</style>
+</head>
+<body style="background-color: whitesmoke;">
+	<h3 style="text-align: center;">ЗВІТ З ЛАБОРАТОРНИХ РОБІТ<br>З ДИСЦИПЛІНИ WEB-ОРІЄНТОВАНІ ТЕХНОЛОГІЇ.<br>ОСНОВИ FRONTEND ТА BACKEND РОЗРОБОК</h3>
+	
+	<h2 style="text-align: center;">БРИГАДА № 17</h2>
+	<p style=" text-align: center;">Студенти : гр. ІО-04 Бондаренко Юлія , гр. ІО-04 Подвойська Еліза</p>
+<div class="img">
+	<img src="../Yulia.jpg" width="130" height="170" style="position:absolute;right:300px;top:10px" >
+	<img src="../Liza.jpg" alt="Liza" width="130" height="170" style="position:absolute;right:100px;top:10px" >
+</div>
+</div>
+	<br><br>
+	<table>
+		<tr>
+			<td><a href="../lab1.html" >Лабораторна №1</a></td>
+			<td><a href="../lab2.html" >Лабораторна №2</a></td>
+			<td><a href="../lab3.html" >Лабораторна №3</a></td>
+			<td><a href="../lab4.html" >Лабораторна №4</a></td>
+			<td><a href="../lab5.html" >Лабораторна №5</a></td>
+			<td><a href="../lab6.html" >Лабораторна №6</a></td>
+			<td><a href="../lab7.html" >Лабораторна №7</a></td>
+			<td><a href="../lab8.html" >Лабораторна №8</a></td>
+			<td><a href="../lab9.html" >Лабораторна №9</a></td>
+		</tr>
+	</table>
+	<div class="container">
+		<div class="one"><a href="theme.html">Тема, Мета</a></div>
+		<div class="one"><a href="JS.html">Cпособи функціонального застосування JavaScript</a></div>
+		<div class="one"><a href="array.html">Масиви </a></div>
+		<div class="one"><a href="6punkt.html">Виконання 6 пункту</a></div>
+		<div class="two"><a href="6punkthtml.html">Валідація "HTML-форми"</a></div>
+		<div class="two"><a href="6punktalarm.html">Будильник</a></div>
+		<div class="one"><a href="summary.html">Висновки та виконавці</a></div>
+	</div>
+	<div class="main">
+		<body>
+			<form class="register" onsubmit="return validateForm()">
+			<h2>Реєстрація користувача</h2>
+			<fieldset>
+				<label for="name">Ім'я *</label>
+				<input type="text" id="name" name="name" required>
+				
+				<label for="surname">Прізвище *</label>
+				<input type="text" id="surname" name="surname" required>
+		
+				<label for="age">Вік</label>
+				<input type="number" id="age" name="age" required min="18">
+		
+				<label for="date">Дата народження *</label>
+				<input type="text" id="date" name="date" required>
+				
+				<label for="email">Електронна адреса *</label>
+				<input type="email" id="email" name="email" required>
+		
+				<label for="password">Пароль *</label>
+				<input type="password" id="password" name="password" required minlength="8">
+		
+				<label for="confirm-password">Підтвердити пароль *</label>
+				<input type="password" id="confirm-password" name="confirm-password" required minlength="8">
+		
+				<button type="submit">Відправити</button>
+			  </fieldset>
+			</form>
+		  
+		  <script src="script.js"></script>
+		
+		  </body>
+		<script src="script.js"></script>
+	   <h4>HTML-код</h4>
+	   <img src="images/HTML-code1.png"width="950" height="700">
+	   <h4>CSS-код</h4>
+	   <img src="images/СSS-code1.png"width="300" height="600">
+	   <h4>JS-код</h4>
+	   <img src="images/JS-code1.png" width="900" height="600">
+	   </div>
+</body>
+</html>

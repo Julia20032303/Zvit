@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Форма з перевіркою введених даних</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <form class="register" onsubmit="return validateForm()">
+    <h2>Реєстрація користувача</h2>
+    <fieldset>
+        <label for="name">Ім'я *</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="surname">Прізвище *</label>
+        <input type="text" id="surname" name="surname" required>
+
+        <label for="age">Вік</label>
+        <input type="number" id="age" name="age" required min="18">
+
+        <label for="date">Дата народження *</label>
+        <input type="text" id="date" name="date" required>
+        
+        <label for="email">Електрона адреса *</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Пароль *</label>
+        <input type="password" id="password" name="password" required minlength="8">
+
+        <label for="confirm-password">Підтвердити пароль *</label>
+        <input type="password" id="confirm-password" name="confirm-password" required minlength="8">
+
+        <button type="submit">Відправити</button>
+      </fieldset>
+	</form>
+  
+  <script src="script.js"></script>
+
+  </body>
+</html>

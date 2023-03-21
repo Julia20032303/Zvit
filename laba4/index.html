@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Будильник</title>
+ <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+ <div class="container">
+  <h1 style="color: rgb(135, 128, 65)">Будильник</h1>
+  <div class="alarm">
+   <div>
+    <label>Дата:</label>
+    <input type="date" id="date">
+   </div>
+   <div>
+    <label>Час:</label>
+    <input type="time" id="time">
+   </div>
+   <div>
+    <label>Увімкнути:</label>
+    <input type="checkbox" id="onoff">
+   </div>
+   <button onclick="setAlarm()">Встановити будильник</button>
+  </div>
+  <div class="message">
+   <p id="message"></p>
+  </div>
+ </div>
+ <script src="script.js"></script>
+</body>
+</html>

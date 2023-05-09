@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/social-media-share-buttons/dist/social-media-share-buttons.min.js"></script>
+
+	<title>Labwork5</title>
+		<style>
+		table {
+			width: 100%
+		}
+		td{
+			height: 60px;
+			text-align: center;
+			border-radius: 17px;
+			background-color: #f9dd94;
+		}
+		a {
+			text-decoration: none;
+			color: black;
+		}
+		.one{
+			width: 370px;
+			height: 30px ;
+			margin-top: 30px;
+			background-color:#5F9EA0;
+			border-radius: 10px;
+			text-align: center;
+			padding-top:10px ;
+		}
+		.two{
+			width: 170px;
+			height: 40px ;
+			margin-top: 10px;
+			background-color:#5F9EA0;
+			border-radius: 10px;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.container{
+			text-align: center;
+			float:  left;
+		}
+		
+		.share-buttons-panel a {
+		display: inline-block;
+		margin: 0 5px;
+		border-radius: 50%;
+		width: 100px;
+		height: 100px;
+		line-height: 40px;
+		text-align: center;
+		color: #fff;
+		font-size: 20px;
+		}
+		.facebook-btn img {
+			width: 100px;
+  			height: 100px;
+			  margin: 0 5px;
+		}
+
+		.twitter-btn img {
+			width: 180px;
+ 			height: 100px;
+			 margin: 0 -35px; 
+		}
+
+		.instagram-btn img{
+			width: 100px;
+  			height: 100px;
+			  margin: 0 5px; 
+		}
+
+		.pinterest-btn img{
+			width: 105px;
+  			height: 107px;
+			  margin: 0 5px; 
+		}
+		
+		.main{
+			margin-left: 390px;
+			margin-top: 1%;
+			padding: 10px;
+            border-color: 1px solid black;
+		}
+		@media all and (max-width: 1350px){
+			.img{
+			display:none;
+		}
+	}
+	</style>
+
+</head>
+<body style="background-color: whitesmoke;">
+	<h3 style="text-align: center;">ЗВІТ З ЛАБОРАТОРНИХ РОБІТ<BR>З ДИСЦИПЛІНИ WEB-ОРІЄНТОВАНІ ТЕХНОЛОГІЇ.<BR>ОСНОВИ FRONTEND ТА BACKEND РОЗРОБОК</h3>
+	
+	<h2 style="text-align: center;">БРИГАДА № 17</h2>
+	<p style=" text-align: center;">Студенти : гр. ІО-04 Бондаренко Юлія , гр. ІО-04 Подвойська Еліза</p>
+<div class="img">
+	<img src="../Yulia.jpg" width="130" height="170" style="position:absolute;right:300px;top:10px" >
+	<img src="../Liza.jpg" alt="Liza" width="130" height="170" style="position:absolute;right:100px;top:10px" >
+</div>
+	<br><br>
+	<table>
+		<tr>
+			<td><a href="../lab1.html" >Лабораторна №1</a></td>
+			<td><a href="../lab2.html" >Лабораторна №2</a></td>
+			<td><a href="../lab3.html" >Лабораторна №3</a></td>
+			<td><a href="../lab4.html" >Лабораторна №4</a></td>
+			<td><a href="../lab5.html" >Лабораторна №5</a></td>
+			<td><a href="../lab6.html" >Лабораторна №6</a></td>
+			<td><a href="../lab7.html" >Лабораторна №7</a></td>
+			<td><a href="../lab8.html" >Лабораторна №8</a></td>
+			<td><a href="../lab9.html" >Лабораторна №9</a></td>
+		</tr>
+	</table>
+	<div class="container">
+		<div class="one"><a href="theme.html">Тема, Мета</a></div>
+		<div class="one"><a href="3punkt.html">Динамічні елементи 3 пункт</a></div>
+		<div class="one"><a href="gallery.html">Галерея UniteGallery</a></div>
+		<div class="one"><a href="social.html">Кнопки соціальних мереж</a></div>
+		<div class="one"><a href="informers.html">Інформери</a></div>
+		<div class="one"><a href="summary.html">Висновки та виконавці</a></div>
+	</div>
+	<div class="main">
+		<div class="share-buttons-panel">
+			<a class="facebook-btn" href="https://uk-ua.facebook.com/"><img src="images/facebook.png" alt="Facebook"></a>
+			<a class="twitter-btn" href="https://twitter.com/?lang=ru"><img src="images/twitter.png" alt="Facebook"></a>
+			<a class="instagram-btn" href="https://www.instagram.com/"><img src="images/instagram.png" alt="Facebook"></a>
+			<a class="pinterest-btn" href="https://www.pinterest.com/"><img src="images/pinterest.png" alt="Facebook"></a>
+		</div>
+		<div>
+			<h4>Підключена бібліотека : </h4> 
+			<img src="images/bibl5.png" width="800" height="90" >
+			<h4>Джава-скріпт код :</h4>
+			<img src="images/js5.png" width="550" height="200" >
+		</div>
+	</div>
+
+	<script>
+		$('.facebook-btn').socialMediaShareButton('facebook');
+		$('.twitter-btn').socialMediaShareButton('twitter');
+		$('.instagram-btn').socialMediaShareButton('instagram');
+		$('.pinterest-btn').socialMediaShareButton('pinterest');
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+		  
+	<title>Labwork5</title>
+		<style>
+		table {
+			width: 100%
+		}
+		td{
+			height: 60px;
+			text-align: center;
+			border-radius: 17px;
+			background-color: #f9dd94;
+		}
+		a {
+			text-decoration: none;
+			color: black;
+		}
+		.one{
+			width: 370px;
+			height: 30px ;
+			margin-top: 30px;
+			background-color:#5F9EA0;
+			border-radius: 10px;
+			text-align: center;
+			padding-top:10px ;
+		}
+		.two{
+			width: 170px;
+			height: 40px ;
+			margin-top: 10px;
+			background-color:#5F9EA0;
+			border-radius: 10px;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.container{
+			text-align: center;
+			float:  left;
+		}
+		.main{
+			margin-left: 390px;
+			height: 500px;
+            padding: 10px;
+            border-color: 1px solid black;
+		}
+		#menuButton{
+			background-color: #5F9EA0;
+    		color: white;
+    		padding: 16px;
+    		font-size: 16px;
+    		border: none;
+			max-width: 220px
+		}
+		@media all and (max-width: 1350px){
+			.img{
+			display:none;
+		}
+	}
+		
+	</style>
+	    <script>
+			$(function() {
+			// Приховування меню при завантаженні сторінки
+			$('#menu').hide();
+			  
+			// Показ меню при натисканні на кнопку
+			$('#menuButton').click(function() {
+				$('#menu').toggle();
+			});
+			  
+			// Закриття меню при кліку за межами меню
+			$(document).click(function(event) { 
+				if(!$(event.target).closest('#menu').length && !$(event.target).is('#menuButton')) {
+				$('#menu').hide();
+			    }        
+			});
+		});
+  </script>
+</head>
+<body style="background-color: whitesmoke;">
+	<h3 style="text-align: center;">ЗВІТ З ЛАБОРАТОРНИХ РОБІТ<BR>З ДИСЦИПЛІНИ WEB-ОРІЄНТОВАНІ ТЕХНОЛОГІЇ.<BR>ОСНОВИ FRONTEND ТА BACKEND РОЗРОБОК</h3>
+	
+	<h2 style="text-align: center;">БРИГАДА № 17</h2>
+	<p style=" text-align: center;">Студенти : гр. ІО-04 Бондаренко Юлія , гр. ІО-04 Подвойська Еліза</p>
+<div class="img">
+	<img src="../Yulia.jpg" width="130" height="170" style="position:absolute;right:300px;top:10px" >
+	<img src="../Liza.jpg" alt="Liza" width="130" height="170" style="position:absolute;right:100px;top:10px" >
+</div>
+	<br><br>
+	<table>
+		<tr>
+			<td><a href="../lab1.html" >Лабораторна №1</a></td>
+			<td><a href="../lab2.html" >Лабораторна №2</a></td>
+			<td><a href="../lab3.html" >Лабораторна №3</a></td>
+			<td><a href="../lab4.html" >Лабораторна №4</a></td>
+			<td><a href="../lab5.html" >Лабораторна №5</a></td>
+			<td><a href="../lab6.html" >Лабораторна №6</a></td>
+			<td><a href="../lab7.html" >Лабораторна №7</a></td>
+			<td><a href="../lab8.html" >Лабораторна №8</a></td>
+			<td><a href="../lab9.html" >Лабораторна №9</a></td>
+		</tr>
+	</table>
+		<div class="container">
+		<div class="one"><a href="theme.html">Тема, Мета</a></div>
+		<div class="one"><a href="3punkt.html">Динамічні елементи 3 пункт</a></div>
+		<div class="two"><a href="datepicker.html">Вибір дати з календаря</a></div>
+		<div class="two" ><a href="menu.html">Спадаюче меню</a></div>
+		<div class="one"><a href="gallery.html">Галерея UniteGallery</a></div>
+		<div class="one"><a href="social.html">Кнопки соціальних мереж</a></div>
+		<div class="one"><a href="informers.html">Інформери</a></div>
+		<div class="one"><a href="summary.html">Висновки та виконавці</a></div>
+	</div>
+	<div class="main">
+		<!-- Menu -->
+		<h3>Спадаюче меню</h3>
+		<p id="menuButton">Натисніть, щоб вибрати опцію</p>
+		<ul id="menu">
+		  <li>Опція 1</li>
+		  <li>Опція 2</li>
+		  <li>Опція 3</li>
+		</ul>
+		<h4>Підключена бібліотека : </h4> 
+		 <img src="images/bibl2.png" width="800" height="90" >
+         <h4>Джава-скріпт код :</h4>
+		 <img src="images/js2.png" width="800" height="400" >
+	</div>
+</body>
+</html>
